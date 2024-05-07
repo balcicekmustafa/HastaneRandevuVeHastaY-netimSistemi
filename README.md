@@ -1,1 +1,1 @@
-# HastaneRandevuVeHastaY-netimSistemi
+# HastaneRandevuVeHastaYonetimSistemi
