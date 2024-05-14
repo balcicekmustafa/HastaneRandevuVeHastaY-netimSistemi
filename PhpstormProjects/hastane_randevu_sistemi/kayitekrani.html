@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hastane Randevu Sistemi</title>
+  <style>
+    body {
+      font-family: Georgia, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 90%;
+    }
+    .form-container {
+      width: 80%;
+      padding: 200px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+    }
+    .form-container h2 {
+      text-align: center;
+    }
+    .form-container form {
+      margin-top: 20px;
+    }
+    .form-container form input[type="text"],
+    .form-container form input[type="password"],
+    .form-container form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #000000;
+    }
+    .form-container form input[type="submit"] {
+      background-color: #FF0000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="form-container">
+
+
+    <h2>Hasta Kayıt Ekranı</h2>
+    <form method="post" action="hasta_kayit.php">
+      <input type="text" name="H_KimlikNo" placeholder="TC Kimlik Numaranız">
+      <input type="text" name="H_Adi" placeholder="Adınız">
+      <input type="text" name="H_Soyadi" placeholder="Soyadınız">
+      <input type="password" name="H_sifre" placeholder="Şifre">
+      <label for="DogumTarihi">Doğum Tarihi:</label>
+      <input type="date" name="DogumTarihi" placeholder="Doğum Tarihiniz">
+      <hr>
+      <label for="Cinsiyet">Cinsiyetiniz::</label>
+      <select name="H_Cinsiyet">
+        <option value="Erkek">Erkek</option>
+        <option value="Kadin">Kadın</option>
+        <input type="text" name="H_TelefonNumarasi" placeholder="Telefon Numaranız">
+      <input type="text" name="H_Email" placeholder="Email Adresiniz">
+      <input type="text" name="H_Adres" placeholder="Adresiniz">
+
+        <input type="submit" value="Kayıt Ol">
+    </form>
+    <hr>
+
+
+    <h2>Hasta Giriş Ekranı</h2>
+    <form method="post" action="hasta_giris.php">
+      <input type="text" name="H_KimlikNo" placeholder="TC Kimlik Numaranız">
+      <input type="password" name="H_Sifre" placeholder="Şifre">
+      <input type="submit" value="Giriş Yap">
+    </form>
+  </div>
+  <div class="form-container">
+
+
+    <h2>Doktor Kayıt Ekranı</h2>
+    <form method="post" action="doktor_kayit.php">
+
+      <input type="text" name="D_KimlikNo" placeholder="Kimlik Numaranız">
+      <input type="text" name="D_Adi" placeholder="Adınız">
+      <input type="text" name="D_Soyad" placeholder="Soyadınız">
+      <input type="text" name="D_Sifre" placeholder="Sifreniz">
+      <input type="text" name="D_Email" placeholder="Email Adresiniz">
+      <label for="UzmanlikAlani">Uzmanlık Alanı Seçiniz:</label>
+      <select name="UzmanlikAlani">
+        <option value="cardiology">Kardiyoloji</option>
+        <option value="neurology">Nöroloji</option>
+        <option value="oncology">Onkoloji</option>
+        <option value="dermatology">Dermatoloji</option>
+        <option value="orthopedics">Ortopedi</option>
+        <option value="pediatrics">Pediatri</option>
+        <option value="gastroenterology">Gastroenteroloji</option>
+        <option value="endocrinology">Endokrinoloji</option>
+        <option value="ophthalmology">Göz Hastalıkları</option>
+        <option value="otolaryngology">Kulak Burun Boğaz</option>
+        <option value="urology">Üroloji</option>
+        <option value="dermatopathology">Dermatopatoloji</option>
+        <option value="hematology">Hematoloji</option>
+        <option value="nephrology">Nefroloji</option>
+        <option value="pulmonology">Pulmonoloji</option>
+        <input type="text" name="D_TelefonNumarasi" placeholder="Telefon Numaranız">
+      </select>
+      <input type="submit" value="Kayıt Ol">
+    </form>
+
+
+    <hr>
+
+
+    <h2>Doktor Giriş Ekranı</h2>
+    <form method="post" action="doktor_giris.php">
+      <input type="text" name="D_KimlikNo" placeholder="Kimlik No">
+      <input type="password" name="D_Sifre" placeholder="Şifre">
+      <input type="submit" value="Giriş Yap">
+    </form>
+  </div>
+</div>
+</body>
+</html>
