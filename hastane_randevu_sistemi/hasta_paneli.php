@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost";
+$servername = "localhost:3306";
 $username = "root";
 $password = "ayse+481";
 $database = "hastaneyonetimsisvt";
@@ -11,7 +11,7 @@ $baglanti = new mysqli($servername, $username, $password, $database);
 if ($baglanti->connect_error) {
     die("Bağlantı hatası: " . $baglanti->connect_error);
 } else {
-    echo "Veritabanına başarıyla bağlandı";
+    echo "";
 }
 session_start();
 include 'hasta_kayit.php';
