@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost";
+$servername = "localhost:3306";
 $username = "root";
 $password = "ayse+481";
 $database = "hastaneyonetimsisvt";
@@ -21,4 +21,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $randevu_tarihi = $_POST['randevu_tarihi'];
 
 }
+
 
