@@ -1,21 +1,5 @@
 <?php
 session_start();
-include 'hasta_kayit.php';
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $kimlik_no = $_POST['kimlik_no'];
-    $sifre = $_POST['sifre'];
-
-    $sorgu = "SELECT * FROM Hasta WHERE KimlikNo='$kimlik_no' AND Sifre='$sifre'";
-    $sonuc = $baglanti->query($sorgu);
-
-    if ($sonuc->num_rows == 1) {
-        $_SESSION['kimlik_no'] = $kimlik_no;
-        header("Location: hasta_paneli.php");
-    } else {
-        echo "Hatalı kimlik numarası veya şifre!";
-    }
-}
 
 $servername = "localhost";
 $username = "root";
@@ -23,12 +7,44 @@ $password = "ayse+481";
 $database = "hastaneyonetimsisvt";
 
 // Veritabanı bağlantısını oluştur
-$baglanti = new mysqli($servername, $username, $password, $database);
+$baglanti = mysqli_connect("localhost", "root", "ayse+481", "hastaneyonetimsisvt");
 
-// Bağlantıyı kontrol et
-if ($baglanti->connect_error) {
-    die("Bağlantı hatası: " . $baglanti->connect_error);
-} else {
-    echo "Veritabanına başarıyla bağlandı";
+if(!$baglanti){
+    die ("connection failed:" .mysqli_connect_error());
 }
+else{
+    echo "Bağlantı başarılı";
+}
+
+
+if (isset($_POST["Kayıt Ol"])) {
+    $sql = " insert into doktor (DoktorID,D_KimlikNo,D_Adi,D_Soyadi,D_Sifre,D_Email,UzmanlikAlani,D_TelefonNumarasi) values ('" . $_POST["DoktorID,D_KimlikNo,D_Adi,D_Soyadi,D_Sifre,D_Email,UzmanlikAlani,D_TelefonNumarasi"] . "')";
+    $sonuc = mysqli_query($baglanti, $sql);
+    if ($sonuc) {
+        echo "verimiz eklendi";
+    } else {
+        echo "hata olustu ekleme olmadı";
+    }
+
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $H_KimlikNo = $_POST['H_KimlikNo'];
+        $H_Sifre = $_POST['H_Sifre'];
+
+        $sorgu = "INSERT INTO hasta (H_KimlikNo,H_Sifre) VALUES ('$H_KimlikNo' , '$H_Sifre')";
+        if ($baglanti->query($sorgu) === TRUE) {
+            echo "Kayıt başarıyla eklendi..";
+        } else {
+            echo "Hata: " . $baglanti->error;
+            exit;
+        }
+        error_reporting(E_ALL);
+        ini_set('display_errors', 1);
+
+        header("Location: giris_ekrani.html");
+        exit;
+
+    }
+}
+
 
