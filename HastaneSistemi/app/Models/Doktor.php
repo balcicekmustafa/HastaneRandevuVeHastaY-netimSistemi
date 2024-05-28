@@ -3,13 +3,28 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 
-class Doktor extends Authenticatable
+class Doktor extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['ad', 'email', 'sifre', 'telefon', 'uzmanlik'];
+    protected $fillable = [
+        'ad', 'email', 'sifre', 'telefon', 'uzmanlik'
+    ];
 
-    protected $hidden = ['sifre'];
+    public function randevular()
+    {
+        return $this->hasMany(Randevu::class);
+    }
+
+    public function receteler()
+    {
+        return $this->hasMany(Recete::class);
+    }
+
+    public function radyolojiRaporlar()
+    {
+        return $this->hasMany(RadyolojiRapor::class);
+    }
 }
