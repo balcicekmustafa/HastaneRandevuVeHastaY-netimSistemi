@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         if (!Schema::hasTable('raporlar')) {
-            \Log::info('Table randevular already exists');
+            \Log::info('Table raporlar already exists');
         }
 
         else{
