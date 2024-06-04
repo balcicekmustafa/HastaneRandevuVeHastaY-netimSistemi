@@ -1,11 +1,12 @@
 hastaneYonetimSistemi/
 |-- app/
 |   |-- Models/
+|   |   |-- User.php
 |   |   |-- Hasta.php
 |   |   |-- Doktor.php
 |   |   |-- Randevu.php
 |   |   |-- Recete.php
-|   |   |-- RadyolojiRapor.php
+|   |   |-- Radyoloji.php
 |   |-- Http/
 |       |-- Controllers/
 |           |-- HastaController.php
