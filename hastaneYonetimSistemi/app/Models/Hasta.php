@@ -12,6 +12,7 @@ class Hasta extends Authenticatable
     protected $fillable = [
         'tc_no', 'ad_soyad', 'email', 'telefon', 'adres', 'sifre'
     ];
+    protected $table='hastas';
 
     public function randevular()
     {

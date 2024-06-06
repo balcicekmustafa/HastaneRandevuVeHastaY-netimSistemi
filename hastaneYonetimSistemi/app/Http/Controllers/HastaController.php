@@ -22,15 +22,25 @@ class HastaController extends Controller
             'tc_no' => 'required|unique:hastas|max:11',
             'ad_soyad' => 'required',
             'email' => 'required|email|unique:hastas',
-            'telefon' => 'nullable',
+            'telefon' => 'required',
             'adres' => 'required',
             'sifre' => 'required',
         ]);
 
-        Hasta::create($validatedData);
-
-        return redirect()->back()->with('success', 'Kayıt başarılı!');
+        if ($validatedData){
+            $hasta=new Hasta();
+            $hasta->tc_no=$request->tc_no;
+            $hasta->ad_soyad=$request->ad_soyad;
+            $hasta->email=$request->email;
+            $hasta->telefon=$request->telefon;
+            $hasta->adres=$request->adres;
+            $hasta->sifre=$request->sifre;
+            $hasta->save();
+            return redirect()->back()->with('status', 'Kayıt başarılı!');
+        }
+        return redirect()->back()->with('error', 'Kayıt başarısız!');
     }
+
     public function showLoginForm()
     {
         return view('hasta.login');
@@ -43,21 +53,22 @@ class HastaController extends Controller
     public function login(Request $request)
     {
         $request->validate([
-            'hasta_tc_no' => 'required',
-            'hasta_sifre' => 'required',
+            'email' => 'required|email',
+            'sifre' => 'required',
         ]);
 
-        $hasta = Hasta::where('tc_no', $request->input('hasta_tc_no'))->first();
+        $credentials = [
+            'email' => $request->email,
+            'password' => $request->sifre,
+        ];
 
-        if ($hasta === null || !Hash::check($request->input('hasta_sifre'), $hasta->sifre)) {
-            return redirect()->back()->with('error', 'Geçersiz TC Kimlik No veya Şifre.');
-        }
-
-        // Giriş başarılı, kullanıcıyı yönlendir
-        return redirect()->route('hasta.dashboard')->with('success', 'Giriş başarılı!');
-
-
-
+        if (Auth::attempt($credentials)) {
+            // Giriş başarılı
+            return redirect()->route('hasta.dashboard');
+        } else {
+            // Giriş başarısız
+            return redirect()->back()->with('status', 'Giriş başarısız. Lütfen bilgilerinizi kontrol edin.');
+         }
     }
 
     public function logout(Request $request)
@@ -78,5 +89,6 @@ class HastaController extends Controller
 
         return view('hasta.dashboard', compact('randevular', 'receteler', 'radyolojiRaporlar'));
         return redirect()->back()->with('success', 'Giriş başarılı!');
+
     }
 }

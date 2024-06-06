@@ -12,102 +12,42 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-        }
-        .container {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-        }
-        .column {
-            flex: 1;
-            padding: 20px;
-            box-sizing: border-box;
+            height: 100vh;
+            justify-content: center;
+            background-color: #f0f0f0;
         }
         h1 {
             text-align: center;
             width: 100%;
         }
-        .column h2 {
-            text-align: center;
-        }
-        form {
+        .button-container {
             display: flex;
             flex-direction: column;
-            margin-top: 20px;
+            align-items: center;
+            gap: 20px;
         }
-        form label {
-            margin-top: 10px;
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            transition: background-color 0.3s ease;
         }
-        form input, form textarea, form button {
-            margin-top: 5px;
-            padding: 10px;
-        }
-        form button {
-            margin-top: 20px;
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-@extends('layouts.app')
-
-@section('content')
 <h1>HASTANE RANDEVU SİSTEMİ</h1>
-<div class="container">
-    <div class="column">
-        <h2>Hasta Kayıt Ekranı</h2>
-        <form action="{{ route('hasta.store') }}" method="POST">
-            @csrf
-            <label for="tc_no">TC Kimlik No:</label>
-            <input type="text" name="tc_no" id="tc_no" required>
-            <label for="ad_soyad">Adı Soyadı:</label>
-            <input type="text" name="ad_soyad" id="ad_soyad" required>
-            <label for="email">E-posta:</label>
-            <input type="email" name="email" id="email" required>
-            <label for="telefon">Telefon No:</label>
-            <input type="text" name="telefon" id="telefon">
-            <label for="adres">Adres:</label>
-            <textarea name="adres" id="adres" required></textarea>
-            <label for="sifre">Şifre:</label>
-            <input type="password" name="sifre" id="sifre" required>
-            <button type="submit">Kaydet</button>
-
-        </form>
-        <h2>Hasta Giriş Sayfası</h2>
-        <form action="{{ route('hasta.login') }}" method="POST">
-            @csrf
-            <label for="hasta_tc_no">Hasta TC Kimlik No:</label>
-            <input type="text" name="hasta_tc_no" id="hasta_tc_no" required>
-            <label for="hasta_sifre">Şifre:</label>
-            <input type="password" name="hasta_sifre" id="hasta_sifre" required>
-            <button type="submit">Giriş Yap</button>
-        </form>
-    </div>
-    <div class="column">
-        <h2>Doktor Kayıt Ekranı</h2>
-        <form action="{{ route('doktor.store') }}" method="POST">
-            @csrf
-            <label for="tc_no">TC Kimlik No:</label>
-            <input type="text" name="tc_no" id="tc_no" required>
-            <label for="ad_soyad">Adı Soyadı:</label>
-            <input type="text" name="ad_soyad" id="ad_soyad" required>
-            <label for="uzmanlik">Uzmanlık Alanı:</label>
-            <input type="text" name="uzmanlik" id="uzmanlik" required>
-            <label for="email">E-posta:</label>
-            <input type="email" name="email" id="email" required>
-            <label for="sifre">Şifre:</label>
-            <input type="password" name="sifre" id="sifre" required>
-            <button type="submit">Kaydet</button>
-        </form>
-        <h2>Doktor Giriş Sayfası</h2>
-        <form action="{{ route('doktor.login') }}" method="POST">
-            @csrf
-            <label for="doktor_tc_no">Doktor TC Kimlik No:</label>
-            <input type="text" name="doktor_tc_no" id="doktor_tc_no" required>
-            <label for="doktor_sifre">Şifre:</label>
-            <input type="password" name="doktor_sifre" id="doktor_sifre" required>
-            <button type="submit">Giriş Yap</button>
-        </form>
-    </div>
+<div class="button-container">
+    <button onclick="window.location.href='{{ route('hasta.create') }}'">Hasta Kayıt</button>
+    <button onclick="window.location.href='{{ route('hasta.login') }}'">Hasta Giriş</button>
+    <button onclick="window.location.href='{{ route('doktor.create') }}'">Doktor Kayıt</button>
+    <button onclick="window.location.href='{{ route('doktor.login') }}'">Doktor Giriş</button>
 </div>
 </body>
 </html>

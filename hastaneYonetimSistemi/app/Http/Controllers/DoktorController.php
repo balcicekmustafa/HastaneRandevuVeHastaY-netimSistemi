@@ -27,9 +27,18 @@ class DoktorController extends Controller
             'sifre' => 'required',
         ]);
 
-        Doktor::create($validatedData);
+        if ($validatedData){
+            $doktor=new Doktor();
+            $doktor->tc_no=$request->tc_no;
+            $doktor->ad_soyad=$request->ad_soyad;
+            $doktor->uzmanlik=$request->uzmanlik;
+            $doktor->email=$request->email;
+            $doktor->sifre=$request->sifre;
+            $doktor->save();
 
-        return redirect()->back()->with('success', 'Kayıt başarılı!');
+            return redirect()->back()->with('success', 'Kayıt başarılı!');
+        }
+        return redirect()->back()->with('error', 'Kayıt başarısız!');
     }
 
 

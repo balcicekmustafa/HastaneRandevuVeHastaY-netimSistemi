@@ -8,12 +8,13 @@ use App\Http\Controllers\DoktorController;
 
 Route::get('/hasta/create', [HastaController::class, 'create'])->name('hasta.create');
 Route::post('/hasta/store', [HastaController::class, 'store'])->name('hasta.store');
-Route::get('/hasta/login', [HastaController::class, 'showLoginForm'])->name('hasta.login');
+Route::get('/hasta/showLoginForm', [HastaController::class, 'showLoginForm'])->name('hasta.login');
 Route::post('/hasta/login', [HastaController::class, 'login'])->name('hasta.login.post');
+Route::get('/hasta/dashboard', [HastaController::class, 'dashboard'])->name('hasta.dashboard');
 
 Route::get('/doktor/create', [DoktorController::class, 'create'])->name('doktor.create');
 Route::post('/doktor/store', [DoktorController::class, 'store'])->name('doktor.store');
-Route::get('/doktor/login', [DoktorController::class, 'showLoginForm'])->name('doktor.login');
+Route::get('/doktor/showLoginForm', [DoktorController::class, 'showLoginForm'])->name('doktor.login');
 Route::post('/doktor/login', [DoktorController::class, 'login'])->name('doktor.login.post');
 
 
