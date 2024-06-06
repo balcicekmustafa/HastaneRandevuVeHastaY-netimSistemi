@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1ef57c8c-9eed-44f3-9f5e-21722a6603db" name="Changes" comment="Delete ProjectSchema">
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Controllers/Auth/AuthenticatedSessionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Controllers/Auth/ConfirmablePasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Controllers/Auth/EmailVerificationNotificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Controllers/Auth/EmailVerificationPromptController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Controllers/Auth/NewPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Controllers/Auth/PasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Controllers/Auth/PasswordResetLinkController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Controllers/Auth/RegisteredUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Controllers/Auth/VerifyEmailController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Controllers/DoktorController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Controllers/HastaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Controllers/PatientController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Controllers/ProfileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Requests/Auth/LoginRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Http/Requests/ProfileUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Models/Doktor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Models/Hasta.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Models/Radyoloji.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Models/Randevu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Models/Recete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/View/Components/AppLayout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/app/View/Components/GuestLayout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/bootstrap/providers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/database/migrations/2024_06_03_085238_create_doktors_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/database/migrations/2024_06_03_085238_create_hastas_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/database/migrations/2024_06_03_085238_create_randevus_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/database/migrations/2024_06_03_085238_create_recetes_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/database/migrations/2024_06_03_085239_create_radyolojis_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/database/migrations/2024_06_03_085437_create_sessions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/database/migrations/2024_06_03_181003_create_cache_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/auth/confirm-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/auth/forgot-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/auth/reset-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/auth/verify-email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/components/application-logo.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/components/auth-session-status.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/components/danger-button.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/components/dropdown-link.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/components/dropdown.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/components/input-error.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/components/input-label.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/components/modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/components/nav-link.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/components/primary-button.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/components/responsive-nav-link.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/components/secondary-button.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/components/text-input.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/doktor/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/doktor/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/doktor/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/hasta/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/hasta/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/hasta/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/layouts/guest.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/layouts/navigation.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/profile/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/profile/partials/delete-user-form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/profile/partials/update-password-form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/profile/partials/update-profile-information-form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/routes/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/tests/Feature/Auth/AuthenticationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/tests/Feature/Auth/EmailVerificationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/tests/Feature/Auth/PasswordConfirmationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/tests/Feature/Auth/PasswordResetTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/tests/Feature/Auth/PasswordUpdateTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/tests/Feature/Auth/RegistrationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/tests/Feature/ProfileTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hastaneYonetimSistemi 4/vite.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" notifyAboutMissingVendor="false" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/hastaneYonetimSistemi/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Muhammed Mustafa Balçiçek &lt;balcicekmustafa46@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;balcicekmustafa&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/balcicekmustafa/HastaneRandevuVeHastaYonetimSistemi.git&quot;,
+    &quot;accountId&quot;: &quot;f9eb291c-8888-4a0a-a2e8-e67193dc57e2&quot;
+  }
+}</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.3">
+    <include_path>
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/league/config" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/composer" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/spatie/laravel-ignition" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/spatie/ignition" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/spatie/flare-client-php" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/HastaneSistemi/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/league/config" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/laravel/breeze" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/composer" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/hastaneYonetimSistemi/vendor/psr/http-client" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2h5BdqHoCjqX1BKtEpv0M3vdp7J" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/balcicekmustafa/PhpstormProjects/HastaneRandevuVeHastaYonetimSistemi&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/hastaneYonetimSistemi" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.Main">
+    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/HastaneSistemi/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hastaneYonetimSistemi 4" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/hastaneYonetimSistemi 4/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PS-241.17011.119" />
+        <option value="bundled-php-predefined-ba97393d7c68-48a1a656d44e-com.jetbrains.php.sharedIndexes-PS-241.17011.119" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ef57c8c-9eed-44f3-9f5e-21722a6603db" name="Changes" comment="" />
+      <created>1716874147037</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716874147037</updated>
+      <workItem from="1716874148071" duration="4708000" />
+      <workItem from="1717401487993" duration="905000" />
+      <workItem from="1717471220473" duration="2000000" />
+      <workItem from="1717473574288" duration="744000" />
+      <workItem from="1717687572988" duration="171000" />
+    </task>
+    <task id="LOCAL-00001" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1716874256264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716874256264</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1716874871778</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716874871778</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1716875546895</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716875546895</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1716876480327</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716876480327</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1716876518261</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716876518261</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1716877176729</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716877176729</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1716877364894</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716877364894</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1716877535492</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716877535492</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1716877670385</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716877670385</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1717471468985</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717471468985</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Delete ProjectSchema">
+      <option name="closed" value="true" />
+      <created>1717473187485</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717473187485</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Delete ProjectSchema">
+      <option name="closed" value="true" />
+      <created>1717473266367</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717473266367</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Delete ProjectSchema">
+      <option name="closed" value="true" />
+      <created>1717473279807</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717473279807</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Delete ProjectSchema">
+      <option name="closed" value="true" />
+      <created>1717473526508</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717473526508</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Delete ProjectSchema">
+      <option name="closed" value="true" />
+      <created>1717473588458</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717473588458</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Delete ProjectSchema">
+      <option name="closed" value="true" />
+      <created>1717473602426</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1717473602426</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Updated" />
+    <MESSAGE value="Delete ProjectSchema" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete ProjectSchema" />
+  </component>
+</project>
